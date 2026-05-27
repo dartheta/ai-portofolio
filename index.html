@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+content="Portfolio AI — Darlenne, peserta Workshop UPH">
+<title>AI Portfolio — Darlenne</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+<h1>Halo, saya <span class="accent">Darlenne</span></h1>
+<p class="subtitle">Siswa SMAK 1 Penabur · Workshop FAIDAS UPH, Mei 2026</p>
+</header>
+<main>
+<section id="about" class="card">
+<h2>Tentang Saya</h2>
+<p>Sejak saya masih kecil saya sudah sangat tertarik dengan dunia teknologi, terlebih lagi akhir-akhir ini, perkembangan AI di dunia berkembang sangat pesat. Aku sendiri dapat melihat peluang kerja & ketertarikan ku dalam dunia ini karena itu aku memutuskan untuk mengikuti workshop ini.</p>
+</section>
+<section id="ai-demo" class="card">
+<h2>AI Demo: Hand Gestures</h2>
+
+<p class="hint">Arahkan kamera ke objek untuk klasifikasi real-
+time.</p>
+
+<button id="start-btn" class="btn-primary">Aktifkan Kamera</button>
+<div id="webcam-wrapper">
+<div id="webcam-container"></div>
+<div id="label-container"></div>
+</div>
+</section>
+<section id="gemini-chat" class="card">
+<h2> Tanya Gemini AI</h2>
+<div class="chat-input-row">
+<textarea id="prompt-input"
+placeholder="Tanyakan apa saja tentang Hand Gestures..."
+rows="3"></textarea>
+<button id="ask-btn" class="btn-primary">Kirim</button>
+</div>
+<div id="answer-box" class="answer-placeholder">Jawaban Gemini akan muncul di sini.</div>
+</section>
+</main>
+<footer>
+<p>© 2026 Darlenne ·
+<a href="https://github.com/dartheta/ai-portofolio"
+target="_blank">Source Code</a>
+
+</p>
+</footer>
+<!-- Library AI (dari CDN, tidak perlu download) -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.3/dist/teachablemachine-image.min.js"></script> 
+<script src="script.js"></script>
+</body>
+</html>
